@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Can CC Test</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body">
+<h1><center>R/ChurningCanada Credit Card Comparison</center></h1>
+<h2><center><a href="index.html">Aeroplan/Membership Rewards</a>&nbsp &nbsp &nbsp<a href="tier2.html">Other Points</a>&nbsp &nbsp &nbsp<a href="business.html">Business Cards</a></center></h2>
+<h3><center>Aeroplan and Membership Rewards Ponts</center></h3>
+<h4><center>These points are desirable as they can be redeemed for a much higer value than their "Approximate Cash Value" if you book a sweetspot flight</center></h4>
+  <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th data-sort onclick="sortTable(0, this)">Card</th>
+          <th data-sort onclick="sortTable(1, this)">Fee</th>
+          <th data-sort onclick="sortTable(2, this)">Point Type</th>
+          <th data-sort onclick="sortTable(3, this)">Total Point Bonus</th>
+          <th data-sort onclick="sortTable(4, this)">Realistic Point Bonus</th>
+          <th data-sort onclick="sortTable(5, this)">Approximate Cash Value</th>
+          <th data-sort onclick="sortTable(6, this)">Bonus Cash Value</th>
+          <th data-sort onclick="sortTable(7, this)">Total Bonus Value Minus Fee</th>
+          <th data-sort onclick="sortTable(8, this)">Minimum Spend Requirement</th>
+          <th data-sort onclick="sortTable(9, this)">MSR Time (In Months)</th>
+          <th data-sort onclick="sortTable(10, this)">Spend Per Month</th>
+          <th data-sort onclick="sortTable(11, this)">Cash Value per Minimum Spend Requirement</th>
+          <th data-sort onclick="sortTable(12, this)">Personal Income</th>
+          <th data-sort onclick="sortTable(12, this)">Household Income</th>
+          <th>Perks</th>
+          <th>Notes</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="no-data hide">
+          <td colspan="16" align="center">No Data - Refresh to Re-Populate the List</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td class="card-name"><a href="https://www.cibc.com/en/personal-banking/credit-cards/all-credit-cards/aeroplan-visa-infinite-card.html" target="_blank">CIBC Aeroplan Visa Infinite</a></td>
+          <td>$0 -First Year Free</td>
+          <td>Aeroplan</td>
+          <td><div class="hide">12</div>45,000</td>
+          <td><div class="hide">15</div>45,000</td>
+          <td><div class="hide">16</div>$450</td>
+          <td><div class="hide">02</div>$0</td>
+          <td><div class="hide">21</div>$450</td>
+          <td><div class="hide">04</div>$1000</td>
+          <td><div class="hide">24</div>4</td>
+          <td><div class="hide">04</div>$250</td>
+          <td><div class="hide">02</div>1.80</td>
+          <td><div class="hide">22</div>$60,000</td>
+          <td><div class="hide">22</div>$100,000</td>
+          <td>Free 1st Checked Bag for 2 on Air Canada</td>
+          <td></td>
+          <td class="del"><span onclick="delRow(this)"><i class="fa-solid fa-trash fa-2xl"></i></span></td>
+        </tr>
+        <tr>
+          <td class="card-name"><a href="https://www.aircanada.com/ca/en/aco/home/aeroplan/credit-cards/td/in-flight.html#/" target="_blank">TD Aeroplan Visa Infinite</a></td>
+          <td>$139</td>
+          <td>Aeroplan</td>
+          <td><div class="hide">13</div>45,000</td>
+          <td><div class="hide">16</div>45,000</td>
+          <td><div class="hide">17</div>$450</td>
+          <td><div class="hide">28</div>$150</td>
+          <td><div class="hide">25</div>$461</td>
+          <td><div class="hide">05</div>$1000</td>
+          <td><div class="hide">04</div>3</td>
+          <td><div class="hide">05</div>$333</td>
+          <td><div class="hide">03</div>1.38</td>
+          <td><div class="hide">23</div>$60,000</td>
+          <td><div class="hide">23</div>$100,000</td>
+          <td>Free 1st Checked Bag for 8 on Air Canada</td>
+          <td></td>
+          <td class="del"><span onclick="delRow(this)"><i class="fa-solid fa-trash fa-2xl"></i></span></td>
+        </tr>
+        <tr>
+          <td class="card-name"><a href="americanexpress.com/ca/en/credit-cards/aeroplan-cards/aeroplan-card/" target="_blank">Amex Aeroplan</a></td>
+          <td>$120</td>
+          <td>Aeroplan</td>
+          <td><div class="hide">15</div>50,000</td>
+          <td><div class="hide">17</div>50,000</td>
+          <td><div class="hide">21</div>$500</td>
+          <td><div class="hide">21</div>$60</td>
+          <td><div class="hide">20</div>$440</td>
+          <td><div class="hide">14</div>$3000</td>
+          <td><div class="hide">26</div>6</td>
+          <td><div class="hide">10</div>$500</td>
+          <td><div class="hide">07</div>0.88</td>
+          <td><div class="hide">02</div>$0</td>
+          <td><div class="hide">02</div>$0</td>
+          <td>Free 1st Checked Bags for 9 on Air Canada</td>
+          <td><a href="https://www.greatcanadianrebates.ca/details/Amex-Aeroplan/" target="_blank">GCR Rebate</a> or 5,000 extra points via referral</td>
+          <td class="del"><span onclick="delRow(this)"><i class="fa-solid fa-trash fa-2xl"></i></span></td>
+        </tr>
+        <tr>
+          <td class="card-name"><a href="https://www.td.com/ca/en/personal-banking/products/credit-cards/aeroplan/aeroplan-visa-platinum-card" target="_blank">TD Aeroplan Platinum</a></td>
+          <td>$0 - First Year Free</td>
+          <td>Aeroplan</td>
+          <td><div class="hide">08</div>20,000</td>
+          <td><div class="hide">08</div>20,000</td>
+          <td><div class="hide">03</div>$200</td>
+          <td><div class="hide">06</div>$0</td>
+          <td><div class="hide">03</div>$200</td>
+          <td><div class="hide">09</div>$1000</td>
+          <td><div class="hide">10</div>3</td>
+          <td><div class="hide">09</div>$333</td>
+          <td><div class="hide">14</div>0.6</td>
+          <td><div class="hide">08</div>$0</td>
+          <td><div class="hide">08</div>$0</td>
+          <td></td>
+          <td></td>
+          <td class="del"><span onclick="delRow(this)"><i class="fa-solid fa-trash fa-2xl"></i></span></td>
+        </tr>
+        <tr>
+          <td class="card-name"><a href="https://www.td.com/ca/en/personal-banking/products/credit-cards/aeroplan/aeroplan-visa-infinite-privilege-card" target="_blank">TD Aeroplan Visa Privilege</a></td>
+          <td>$599</td>
+          <td>Aeroplan</td>
+          <td><div class="hide">32</div>115,000</td>
+          <td><div class="hide">31</div>115,000</td>
+          <td><div class="hide">32</div>$1,150</td>
+          <td><div class="hide">07</div>$0</td>
+          <td><div class="hide">29</div>$551</td>
+          <td><div class="hide">32</div>$12,000</td>
+          <td><div class="hide">31</div>12</td>
+          <td><div class="hide">20</div>$1,000</td>
+          <td><div class="hide">15</div>0.55</td>
+          <td><div class="hide">32</div>$150,000</td>
+          <td><div class="hide">32</div>$200,000</td>
+          <td>Nexus Credit, Unlimited MLL Access, Free 1st Checked Bags for 8 passangers on AC, Priority Airport Services, Annual $99 Companion Pass</td>
+          <td></td>
+          <td class="del"><span onclick="delRow(this)"><i class="fa-solid fa-trash fa-2xl"></i></span></td>
+        </tr>
+        <tr>
+          <td class="card-name"><a href="https://www.americanexpress.com/ca/en/credit-cards/cobalt-card/" target="_blank">Amex Cobalt</a></td>
+          <td>$156 - Paid Monthly</td>
+          <td>Membership Rewards</td>
+          <td><div class="hide">09</div>40,000</td>
+          <td><div class="hide">14</div>40,000</td>
+          <td><div class="hide">15</div>$400</td>
+          <td><div class="hide">08</div>$0</td>
+          <td><div class="hide">06</div>$244</td>
+          <td><div class="hide">27</div>$6,000</td>
+          <td><div class="hide">32</div>12</td>
+          <td><div class="hide">13</div>$500</td>
+          <td><div class="hide">16</div>0.49</td>
+          <td><div class="hide">09</div>$0</td>
+          <td><div class="hide">09</div>$0</td>
+          <td>5x Points on Eats & Drinks</td>
+          <td><a href="https://www.greatcanadianrebates.ca/details/Amex-Cobalt/" target="_blank">GCR Rebate</a> or <a href="https://www.reddit.com/r/amexcanada/comments/vy8yw9/cobalt_up_to_45k_mr_sub_via_lifeworks_details_in/" target="_blank">LifeWorks Offer For More Points</a></td>
+          <td class="del"><span onclick="delRow(this)"><i class="fa-solid fa-trash fa-2xl"></i></span></td>
+        </tr>
+        <tr>
+          <td class="card-name"><a href="https://www.americanexpress.com/ca/en/credit-cards/gold-rewards-card/?ieep=04MC4939&PID=15-15353843-8893786-&cjevent=a92138b3530c11ed80aeacab0a82b836" target="_blank">Amex Gold</a></td>
+          <td>$250</td>
+          <td>Membership Rewards</td>
+          <td><div class="hide">21</div>60,000</td>
+          <td><div class="hide">25</div>60,000</td>
+          <td><div class="hide">26</div>$600</td>
+          <td><div class="hide">25</div>$100</td>
+          <td><div class="hide">22</div>$450</td>
+          <td><div class="hide">15</div>$3,000</td>
+          <td><div class="hide">11</div>3</td>
+          <td><div class="hide">21</div>$1,000</td>
+          <td><div class="hide">17</div>0.45</td>
+          <td><div class="hide">10</div>$0</td>
+          <td><div class="hide">10</div>$0</td>
+          <td>4 Lounge Passes,  Nexus Credit, Hotel Benefits </td>
+          <td><a href="https://www.americanexpress.com/ca/en/credit-cards/gold-rewards-card/?ieep=04MC4939&PID=15-15353843-8893786-&cjevent=a92138b3530c11ed80aeacab0a82b836" target="_blank">Perkopolis Offer</a> or <a href="https://www.greatcanadianrebates.ca/details/Amex-Gold/" target="_blank">GCR Rebate</a></td>
+          <td class="del"><span onclick="delRow(this)"><i class="fa-solid fa-trash fa-2xl"></i></span></td>
+        </tr>
+        <tr>
+          <td class="card-name"><a href="https://www.americanexpress.com/ca/en/credit-cards/aeroplan-reserve/" target="_blank">Amex Aeroplan Reserve</a></td>
+          <td>$599</td>
+          <td>Aeroplan</td>
+          <td><div class="hide">29</div>85,000</td>
+          <td><div class="hide">30</div>85,000</td>
+          <td><div class="hide">31</div>$850</td>
+          <td><div class="hide">11</div>$0</td>
+          <td><div class="hide">10</div>$251</td>
+          <td><div class="hide">28</div>$6,000</td>
+          <td><div class="hide">30</div>6</td>
+          <td><div class="hide">24</div>$1,000</td>
+          <td><div class="hide">21</div>0.25</td>
+          <td><div class="hide">13</div>$0</td>
+          <td><div class="hide">13</div>$0</td>
+          <td>Unlimited Maple Leaf Lounge Access, Priority Airport Services, Free 1st Checked Bags for 8 passangers on AC, Nexus Credit </td>
+          <td><a href="https://www.greatcanadianrebates.ca/details/Amex-Gold/" target="_blank">GCR Rebate</a> or 5,000 extra points via referral</td>
+          <td class="del"><span onclick="delRow(this)"><i class="fa-solid fa-trash fa-2xl"></i></span></td>
+        </tr>
+        <tr>
+          <td class="card-name"><a href="https://www.americanexpress.com/ca/en/charge-cards/the-platinum-card/" target="_blank">Amex Platinum</a></td>
+          <td>$699</td>
+          <td>Membership Rewards</td>
+          <td><div class="hide">28</div>80,000</td>
+          <td><div class="hide">26</div>60,000</td>
+          <td><div class="hide">27</div>$600</td>
+          <td><div class="hide">32</div>$350</td>
+          <td><div class="hide">11</div>$251</td>
+          <td><div class="hide">31</div>$6,000</td>
+          <td><div class="hide">22</div>3</td>
+          <td><div class="hide">32</div>$2,000</td>
+          <td><div class="hide">30</div>0.13</td>
+          <td><div class="hide">19</div>$0</td>
+          <td><div class="hide">19</div>$0</td>
+          <td>Unlimited Lounge Access, Status at Hotels, AMEX offers, YYZ Benefits</td>
+          <td><a href="https://www.greatcanadianrebates.ca/details/Amex-ThePlatinumCard/" target="_blank">GCR Rebate</a> or 5,000 extra points via referral</td>
+          <td class="del"><span onclick="delRow(this)"><i class="fa-solid fa-trash fa-2xl"></i></span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <h3>Some Notes:</h3>
+  <h3>- This chart was created on the assumption that you want to spend the least amount of money to earn the highest amount of points. It does not factor in the value of lounge visits, exclusive offers, companion passes, etc.</h3>
+  <h3>- "Cash Value per Minimum Spend Requirement" shows the most amount of value you get per dollar spend (the higher the better) </h3>
+  <h3>- "Bonus Cash Value" calculates non-point bonuses like rebates, cashback, credits, and other cash equivelants that do not come to you as points </h3>
+  <h3>- Some of the listed cards can receive an even higher amount with a referral - if you don't know anyone you can find someone to refer you <a href="https://www.reddit.com/r/churningcanada/comments/10rdg7e/monthly_referral_thread_canadian_credit_cards/" target="_blank">here</a></h3>
+  <h3>- This website is not financial advice and may not have up-to-date information. Please do your own reserach</h3>
+</body>
+
+<script>
+
+    function sortTable (n, evt) {
+      var table = document.querySelector('table'),
+          thead = document.querySelector('thead'),
+          tbody = table.querySelectorAll('tbody')[1],
+          bRows = [...tbody.rows],
+          hData = [...thead.querySelectorAll('th')],
+          desc = false;
+          
+        hData.map ( (head) => {
+          if ( head != evt ) {
+              head.classList.remove('asc', 'desc');
+          }
+        } );
+        
+        desc = evt.classList.contains ( 'asc' ) ? true : false;
+        evt.classList[desc ? 'remove' : 'add']('asc');
+        evt.classList[desc ? 'add' : 'remove']('desc');
+
+        tbody.innerHTML = '';
+
+          bRows.sort( (a, b) => {
+            let x = a.getElementsByTagName('td')[n].innerHTML.toLowerCase(),
+                y = b.getElementsByTagName('td')[n].innerHTML.toLowerCase();
+            return desc ? (x < y ? 1 : -1) : (x < y ? -1 : 1);
+          } );
+          bRows.map ( (bRow) => {
+              tbody.appendChild(bRow);
+          } )
+          
+    }
+
+    function delRow ($this) {
+      var table = document.querySelector('table'),
+        tbody = document.querySelectorAll('tbody')[1],
+        index = [...tbody.children].indexOf($this.parentElement.parentElement);
+        
+      $this.parentElement.parentElement.classList.add('remove');
+      setTimeout( () => {
+          tbody.deleteRow(index);
+          document.querySelector('.no-data').classList[[...tbody.children].length == 0 ? 'remove' : 'add']('hide');
+      }, 900);
+    }
+
+</script>
+</html>
