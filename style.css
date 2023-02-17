@@ -20,7 +20,7 @@ body {
   background-color: white;
   min-height: 600px;
   border-radius: 6px;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 table {
