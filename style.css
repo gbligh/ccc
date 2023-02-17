@@ -116,7 +116,7 @@ table td.del {
   position: absolute;
   cursor: pointer;
   height: 100%;
-  max-width: 4px;
+  max-width: 0px;
   width: 100%;;
   background-color: rgb(255, 62, 62);
   top: 0;
