@@ -113,6 +113,8 @@ table tr.remove td {
 }
 
 table td.del {
+  display: flex;
+  align-items: center;
   position: absolute;
   cursor: pointer;
   height: 100%;
@@ -136,7 +138,6 @@ table td.del:hover {
 
 table td.del span {
   display: inline-block;
-  padding-top: 25px;
   padding-left: 20px;
 }
 
