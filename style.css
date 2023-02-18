@@ -19,6 +19,7 @@ body {
   position: relative;
   background-color: white;
   min-height: 600px;
+  max-width: 1500px;
   border-radius: 6px;
   overflow: scroll;
 }
