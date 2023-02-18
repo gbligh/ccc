@@ -23,6 +23,17 @@ body {
   overflow: scroll;
 }
 
+button {
+  background-color: lightblue;
+  width: 200px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 3px solid black;
+  color: white;
+  cursor: pointer;
+}
+
 table {
   min-width: 100%;
   table-layout: fixed;
