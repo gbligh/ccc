@@ -187,3 +187,105 @@ table tr.remove td.del span{
 table tr.no-data {
   height: 160px;
 }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.benefitBody {
+  padding-top: 60px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titleText {
+  text-align: center;
+}
+
+.titleTexttwo {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.benefitContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr
+}
+
+.checkboxText {
+  color: black;
+  cursor: pointer;
+}
+
+#tooltip, #tooltipFour, #tooltipFive, #tooltipSeven {
+  position: relative;
+  cursor: pointer;
+}
+
+#tooltipText {
+  position: absolute;
+  text-align: center;
+  width: 600px;
+  left: 35%;
+  top: 0;
+  transform: translateX(-50%);
+  background-color: #000;
+  color: #fff;
+  white-space: pre-wrap;
+  padding: 10px 15px;
+  border-radius: 7px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#tooltipText::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  border: 15px solid;
+  border-color: #000 #0000 #0000 #0000;
+}
+
+#tooltip:hover #tooltipText {
+  top: -260%;
+  visibility: visible;
+  opacity: 1;
+}
+
+#tooltipFour:hover #tooltipText {
+  top: -310%;
+  visibility: visible;
+  opacity: 1;
+}
+
+#tooltipFive:hover #tooltipText {
+  top: -355%;
+  visibility: visible;
+  opacity: 1;
+}
+
+#tooltipSeven:hover #tooltipText {
+  top: -450%;
+  visibility: visible;
+  opacity: 1;
+}
+
+a:link {
+  color: darkmagenta;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: darkmagenta;
+  background-color: transparent;
+  text-decoration: none;
+}
