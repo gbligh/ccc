@@ -226,7 +226,7 @@ table tr.no-data {
   cursor: pointer;
 }
 
-#tooltip, #tooltipFour, #tooltipFive, #tooltipSeven {
+#tooltip, #tooltipFour, #tooltipFive, #tooltipSix, #tooltipNine {
   position: relative;
   cursor: pointer;
 }
@@ -258,12 +258,6 @@ table tr.no-data {
   border-color: #000 #0000 #0000 #0000;
 }
 
-#tooltip:hover #tooltipText {
-  top: -300%;
-  visibility: visible;
-  opacity: 1;
-}
-
 #tooltipFour:hover #tooltipText {
   top: -315%;
   visibility: visible;
@@ -276,7 +270,13 @@ table tr.no-data {
   opacity: 1;
 }
 
-#tooltipSeven:hover #tooltipText {
+#tooltipSix:hover #tooltipText {
+  top: -420%;
+  visibility: visible;
+  opacity: 1;
+}
+
+#tooltipNine:hover #tooltipText {
   top: -550%;
   visibility: visible;
   opacity: 1;
