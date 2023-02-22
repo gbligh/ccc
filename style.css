@@ -255,19 +255,19 @@ table tr.no-data {
 }
 
 #tooltip:hover #tooltipText {
-  top: -260%;
+  top: -270%;
   visibility: visible;
   opacity: 1;
 }
 
 #tooltipFour:hover #tooltipText {
-  top: -310%;
+  top: -320%;
   visibility: visible;
   opacity: 1;
 }
 
 #tooltipFive:hover #tooltipText {
-  top: -355%;
+  top: -375%;
   visibility: visible;
   opacity: 1;
 }
