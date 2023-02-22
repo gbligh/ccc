@@ -259,13 +259,13 @@ table tr.no-data {
 }
 
 #tooltipFour:hover #tooltipText {
-  top: -315%;
+  top: -215%;
   visibility: visible;
   opacity: 1;
 }
 
 #tooltipFive:hover #tooltipText {
-  top: -385%;
+  top: -395%;
   visibility: visible;
   opacity: 1;
 }
@@ -277,7 +277,7 @@ table tr.no-data {
 }
 
 #tooltipNine:hover #tooltipText {
-  top: -550%;
+  top: -525%;
   visibility: visible;
   opacity: 1;
 }
