@@ -265,7 +265,7 @@ table tr.no-data {
 }
 
 #tooltipFour:hover #tooltipText {
-  top: -330%;
+  top: -315%;
   visibility: visible;
   opacity: 1;
 }
@@ -277,7 +277,7 @@ table tr.no-data {
 }
 
 #tooltipSeven:hover #tooltipText {
-  top: -450%;
+  top: -550%;
   visibility: visible;
   opacity: 1;
 }
