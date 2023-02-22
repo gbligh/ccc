@@ -283,13 +283,13 @@ table tr.no-data {
 }
 
 a:link {
-  color: darkmagenta;
+  color: green;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: darkmagenta;
+  color: green;
   background-color: transparent;
   text-decoration: none;
 }
