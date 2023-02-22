@@ -8,20 +8,34 @@
 
 .hide { display: none; }
 
+.header{ 
+  background-color: lightblue;
+  color: black;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.refresh {
+    position: absolute;
+    top: 55px;
+    right: 30px;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   background-color: lightgoldenrodyellow;
   color: black;
-  padding: 20px;
-}
-
-.container {
-  position: relative;
-  background-color: white;
-  min-height: 600px;
-  max-width: 1500px;
-  border-radius: 6px;
-  overflow: scroll;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 60px;
 }
 
 button {
@@ -33,6 +47,15 @@ button {
   border: 3px solid black;
   color: white;
   cursor: pointer;
+}
+
+.container {
+  position: relative;
+  background-color: white;
+  min-height: 600px;
+  max-width: 1500px;
+  border-radius: 6px;
+  overflow: scroll;
 }
 
 table {
