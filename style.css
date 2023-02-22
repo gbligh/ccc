@@ -273,7 +273,7 @@ table tr.no-data {
 }
 
 #tooltipSeven:hover #tooltipText {
-  top: -450%;
+  top: -550%;
   visibility: visible;
   opacity: 1;
 }
