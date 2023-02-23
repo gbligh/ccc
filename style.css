@@ -257,6 +257,7 @@ table tr.no-data {
   transform: translateX(-50%);
   border: 15px solid;
   border-color: #000 #0000 #0000 #0000;
+  z-index: 120;
 }
 
 #tooltipFour:hover #tooltipText {
