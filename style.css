@@ -230,6 +230,7 @@ table tr.no-data {
 #tooltip, #tooltipFour, #tooltipFive, #tooltipSix, #tooltipNine {
   position: relative;
   cursor: pointer;
+  z-index: 1000;
 }
 
 #tooltipText {
@@ -247,6 +248,7 @@ table tr.no-data {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.5s ease;
+  z-index: 1002;
 }
 
 #tooltipText::before {
