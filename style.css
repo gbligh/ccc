@@ -191,6 +191,17 @@ table td.del {
   transition: all linear 0.3s;
 }
 
+.garbageButton {
+  background-color: rgb(255, 62, 62);
+  padding: 5px;
+  color: white;
+  display: inline-block;
+}
+
+.sampleButton {
+  display: inline-block;
+}
+
 table tr:hover td.del {
   max-width: 10px;
 }
