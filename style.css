@@ -256,6 +256,18 @@ table tr.no-data {
   cursor: pointer;
 }
 
+#tooltipGarbage {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+#tooltipGarbage:hover #tooltipTexttable {
+  top: -340%;
+  visibility: visible;
+  opacity: 1;
+}
+
 #tooltipTablethree:hover #tooltipTexttable {
   top: -540%;
   visibility: visible;
