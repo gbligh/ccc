@@ -12,26 +12,52 @@
   gtag('config', 'G-56V8CGNZFV');
 </script>
  
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Canadian Credit Card Comparison Tool</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <title>Credit Card Comparison Canada</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Roboto+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
-<body">
-<div class="header">
-  <div>Credit Card Comparison Canada</div>
-  <div><a href="apmr.html">Credit Card Comparison Tool</a></div>
-  <div><a href="amexplatinum.html">Credit Card Comparison Tool</a></div>
-</div>
-<h1><center>R/ChurningCanada Credit Card Comparison</center></h1>
-<h2><center><a href="apmr.html">Aeroplan/Membership Rewards</a>&nbsp &nbsp &nbsp<a href="other.html">Other Points</a>&nbsp &nbsp &nbsp<a href="business.html">Business Cards</a></center></h2>
-<h3><center>Other points types include: Aventura, Scene, TD, Marriott Bonvoy, Avion, Cashback, Air Miles, Avios, Westjet Dollars, and A La Carte</center></h3>
-<h4><center>The points are still worth collecting but cannot be redeemed for much higher than their approximate cash value</center></h4>
-</div>  
-  <div class="container">
+<body>
+  <!-- Navigation bar -->
+  <header class="header">
+    <!-- Logo -->
+    <a href="#" class="logo">CJS</a>
+    <!-- Hamburger icon -->
+    <input class="side-menu" type="checkbox" id="side-menu"/>
+    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+    <!-- Menu -->
+    <nav class="nav">
+        <ul class="menu">
+            <li><a href="apmr.html">Home</a></li>
+            <li><a href="apmr.html">Credit Card Comparison</a> </li>
+            <li><a href="americanexpressplatinum.html">Credit Card Benefit List</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <div class="pageInfo">
+    <p class="rowOne">Canadian Credit Card Point Bonus Comparison</p>
+    <p class="rowTwo">Other Point Types</p>
+    <p class="rowThree">The points are still worth collecting but cannot be redeemed for much higher than their approximate cash value.</p>
+  </div>
+
+  <div class="buttonCenter">
+    <div class="dropdown">
+        <button class="dropbtn">Select Point Type <i class="fa-solid fa-chevron-down"></i></button>
+        <div class="dropdown-content">
+          <a href="apmr.html">Aeroplan & Membership Rewards</a>
+          <a href="other.html">Other Points</a>
+          <a href="business.html">Business Cards</a>
+        </div>
+    </div>
+  </div>
+
+  <div class="tableWrapper">
     <table>
       <thead>
         <th colspan="16">
@@ -41,11 +67,10 @@
             <div>Credit Card Comparison</div>
             <div><i class="fa-solid fa-plane-arrival fa-2xl"></i></div>
             <div><button class="refresh" onClick="window.location.reload();">Refresh Sheet</button></div>
-            <div class="sampleButton">Click to Hide Row --> <div id="tooltipGarbage"><span id="tooltipTexttable">Click here on a row below to delete the card from this sheet</span><span class="garbageButton"><i class="fa-solid fa-trash fa-l"></i></span></div><div> 
-          </div>
+            <div class="sampleButton">Click to Delete Card --> <div id="tooltipGarbage"><span id="tooltipTexttable">Click here on a row below to delete the card from this sheet</span><span class="garbageButton"><i class="fa-solid fa-trash fa-l"></i></span></div><div> 
         </th>
         <tr>
-          <th width="20%"data-sort onclick="sortTable(0, this)">Card (Click Here to Sort)</th>
+          <th width="20%"data-sort onclick="sortTable(0, this)">Card</th>
           <th data-sort onclick="sortTable(1, this)">Fee</th>
           <th data-sort onclick="sortTable(2, this)">Point Type</th>
           <th data-sort onclick="sortTable(3, this)">Total Point Bonus</th>
@@ -360,58 +385,61 @@
       </tbody>
     </table>
   </div>
-  <h3>Some Notes:</h3>
-  <h3>- This chart was created on the assumption that you want to spend the least amount of money to earn the highest amount of points. It does not factor in the value of lounge visits, exclusive offers, companion passes, etc.</h3>
-  <h3>- "Cash Value per Minimum Spend Requirement" shows the most amount of value you get per dollar spend (the higher the better) </h3>
-  <h3>- "Bonus Cash Value" calculates non-point bonuses like rebates, cashback, credits, and other cash equivelants that do not come to you as points </h3>
-  <h3>- Some of the listed cards can receive an even higher amount with a referral - if you don't know anyone you can find someone to refer you <a href="https://www.reddit.com/r/churningcanada/comments/10rdg7e/monthly_referral_thread_canadian_credit_cards/" target="_blank">here</a></h3>
-  <h3>- This website is not financial advice and may not have up-to-date information. Please do your own reserach</h3>
-</body>
 
+  <div class="pageInfo">
+    <p class="footerTwo">Notes</p>
+    <p class="footerThree">&#x2022; This website is not financial advice and may not have up-to-date information. Please do your own reserach.</p>
+    <p class="footerThree">&#x2022; "Bonus Cash Value" calculates non-point bonuses like rebates, cashback, credits, and other cash equivelants that do not come to you as points.</p>
+    <p class="footerThree">&#x2022; "Cash Value per Minimum Spend Requirement" shows the most amount of value you get per dollar spend (the higher the better)</p>
+    <p class="footerThree">&#x2022; This chart was created on the assumption that you want to spend the least amount of money to earn the highest amount of points. It does not factor in the value of lounge visits, exclusive offers, companion passes, etc.</p>
+    <p class="footerThree">&#x2022; * means first year free. After your first year there is likely an annual fee.</p>
+  </div>
+
+</body>
 <script>
 
-    function sortTable (n, evt) {
-      var table = document.querySelector('table'),
-          thead = document.querySelector('thead'),
-          tbody = table.querySelectorAll('tbody')[1],
-          bRows = [...tbody.rows],
-          hData = [...thead.querySelectorAll('th')],
-          desc = false;
-          
-        hData.map ( (head) => {
-          if ( head != evt ) {
-              head.classList.remove('asc', 'desc');
-          }
+  function sortTable (n, evt) {
+    var table = document.querySelector('table'),
+        thead = document.querySelector('thead'),
+        tbody = table.querySelectorAll('tbody')[1],
+        bRows = [...tbody.rows],
+        hData = [...thead.querySelectorAll('th')],
+        desc = false;
+        
+      hData.map ( (head) => {
+        if ( head != evt ) {
+            head.classList.remove('asc', 'desc');
+        }
+      } );
+      
+      desc = evt.classList.contains ( 'asc' ) ? true : false;
+      evt.classList[desc ? 'remove' : 'add']('asc');
+      evt.classList[desc ? 'add' : 'remove']('desc');
+
+      tbody.innerHTML = '';
+
+        bRows.sort( (a, b) => {
+          let x = a.getElementsByTagName('td')[n].innerHTML.toLowerCase(),
+              y = b.getElementsByTagName('td')[n].innerHTML.toLowerCase();
+          return desc ? (x < y ? 1 : -1) : (x < y ? -1 : 1);
         } );
+        bRows.map ( (bRow) => {
+            tbody.appendChild(bRow);
+        } )
         
-        desc = evt.classList.contains ( 'asc' ) ? true : false;
-        evt.classList[desc ? 'remove' : 'add']('asc');
-        evt.classList[desc ? 'add' : 'remove']('desc');
+  }
 
-        tbody.innerHTML = '';
-
-          bRows.sort( (a, b) => {
-            let x = a.getElementsByTagName('td')[n].innerHTML.toLowerCase(),
-                y = b.getElementsByTagName('td')[n].innerHTML.toLowerCase();
-            return desc ? (x < y ? 1 : -1) : (x < y ? -1 : 1);
-          } );
-          bRows.map ( (bRow) => {
-              tbody.appendChild(bRow);
-          } )
-          
-    }
-
-    function delRow ($this) {
-      var table = document.querySelector('table'),
-        tbody = document.querySelectorAll('tbody')[1],
-        index = [...tbody.children].indexOf($this.parentElement.parentElement);
-        
-      $this.parentElement.parentElement.classList.add('remove');
-      setTimeout( () => {
-          tbody.deleteRow(index);
-          document.querySelector('.no-data').classList[[...tbody.children].length == 0 ? 'remove' : 'add']('hide');
-      }, 900);
-    }
+  function delRow ($this) {
+    var table = document.querySelector('table'),
+      tbody = document.querySelectorAll('tbody')[1],
+      index = [...tbody.children].indexOf($this.parentElement.parentElement);
+      
+    $this.parentElement.parentElement.classList.add('remove');
+    setTimeout( () => {
+        tbody.deleteRow(index);
+        document.querySelector('.no-data').classList[[...tbody.children].length == 0 ? 'remove' : 'add']('hide');
+    }, 900);
+  }
 
 </script>
-</html> 
+</html>
