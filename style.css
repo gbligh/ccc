@@ -1,69 +1,488 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap');
+:root{
+    --white: #f9f9f9;
+    --black: #36383F;
+    --gray: #85888C;
+} /* variables*/
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
+    font-family: 'Noto Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
 }
 
-img {
-  width: 350px;
+.pageInfo {
+  background-color: none;
 }
 
-.hide { display: none; }
+.hide { 
+  display: none; 
+}
 
-.header{ 
-  background-color: rgb(95, 95, 95);
-  color: black;
-  font-weight: bold;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 50px;
+.fullPagecontainer {
+  background-color: palegoldenrod;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  z-index: 100;
+  justify-content: center;
+  align-items: flex-end;
 }
 
-body {
-  font-family: 'Roboto Mono', monospace;
-  background-color: grey;
-  color: black;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  padding-top: 60px;
+/* Header */
+.header{
+  background-color: var(--black);
+  background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
+  box-shadow: 1px 1px 5px 0px var(--gray);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+/* Logo */
+.logo{
+  display: inline-block;
+  color: var(--white);
+  font-size: 60px;
+  margin-left: 10px;
+}
+
+/* Nav menu */
+.nav{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: var(--black);
+  overflow: hidden;
+}
+
+.menu a{
+  display: block;
+  padding: 30px;
+  color: var(--white);
+}
+.menu a:hover{
+  background-color: var(--gray);
+}
+.nav{
+  max-height: 0;
+  transition: max-height .5s ease-out;
+}
+
+/* Menu Icon */
+.hamb{
+  cursor: pointer;
+  float: right;
+  padding: 40px 20px;
+}/* Style label tag */
+
+.hamb-line {
+  background: var(--white);
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+
+} /* Style span tag */
+
+.hamb-line::before,
+.hamb-line::after{
+  background: var(--white);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+.hamb-line::before{
+  top: 5px;
+}
+.hamb-line::after{
+  top: -5px;
+}
+
+.side-menu {
+  display: none;
+} /* Hide checkbox */
+
+/* Toggle menu icon */
+.side-menu:checked ~ nav{
+  max-height: 100%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+  background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+  transform: rotate(-45deg);
+  top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+  transform: rotate(45deg);
+  top:0;
+}
+
+/* Responsiveness */
+@media (min-width: 768px) {
+    .nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
+    }
+    .menu li{
+        float: left;
+    }
+    .menu a:hover{
+        background-color: transparent;
+        color: var(--gray);
+    }
+
+    .hamb{
+        display: none;
+    }
+
+    .rowOne {
+      color: brown;
+      text-align: center;
+      padding-top: 100px;
+      padding-bottom: 15px;
+      font-size: 22px;
+    }
+    
+    .rowTwo {
+      color: black;
+      text-align: center;
+      font-size: 50px;
+      font-weight: bold;
+      padding-bottom: 15px;
+    }
+    
+    .rowThree {
+      text-align: center;
+      font-size: 22px;
+      padding-left: 230px;
+      padding-right: 230px;
+      padding-bottom: 30px;
+    }
+
+    .footerTwo {
+      color: black;
+      text-align: center;
+      font-size: 50px;
+      font-weight: bold;
+      padding-top: 50px;
+    }
+
+    .footerThree {
+      text-align: left;
+      font-size: 22px;
+      padding-left: 130px;
+      padding-right: 130px;
+      padding-bottom: 30px;
+      padding-top: 30px;
+    }
+
+    .sampleButton, .refresh {
+      display: inline-block;
+    }
+
+    .buttonCenter {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 90px;
+  }
+
+    .tableWrapper {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .refresh {
+      background-color: aqua;
+    }
+
+    .button-32 {
+      background-color: #fff000;
+      border-radius: 12px;
+      color: #000;
+      cursor: pointer;
+      font-weight: bold;
+      padding: 10px 15px;
+      text-align: center;
+      transition: 200ms;
+      width: 100%;
+      box-sizing: border-box;
+      border: 0;
+      font-size: 10px;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+
+    .button-32:not(:disabled):hover,
+    .button-32:not(:disabled):focus {
+      outline: 0;
+      background: #f4e603;
+      box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+    }
+
+    .button-32:disabled {
+      filter: saturate(0.2) opacity(0.5);
+      -webkit-filter: saturate(0.2) opacity(0.5);
+      cursor: not-allowed;
+    }
+
+    .question button{
+      width: 100%;
+      background-color: #000;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 15px;
+      align-items: center;
+      padding: 20px 15px;
+      border:none;
+      outline: none;
+      font-size: 22px;
+      color: #fff;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .question p{
+      font-size: 22px;
+      max-height: 0;
+      opacity: 0;
+      line-height: 1.5;
+      overflow: hidden;
+      transition: all 0.6s ease;
+    }
+
+
+  .ccImage {
+    width: 30%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .ccimageWrapper {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .titleText {
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .titleTexttwo {
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .titleTextthree {
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .nav{
+    width: fit-content;
+    width: 100%;
+    height: 100%;
+}
+
+  .rowOne {
+    color: brown;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-size: 18px;
+  }
+
+  .rowTwo {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 15px;
+  }
+
+  .rowThree {
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 20px;
+  }
+
+  .footerTwo {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 50px;
+  }
+
+  .footerThree {
+    text-align: left;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
+  .sampleButton, .refresh {
+    display: none;
+  }
+
+  .buttonCenter {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+  table {
+    color: white;
+    background-color: black;
+    font-family: 'Roboto Mono', monospace;
+    table-layout: fixed;
+    border-collapse: collapse;
+  }
+
+  .tableWrapper {
+    padding-right: 220px;
+  }
+
+  .question button{
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    align-items: center;
+    padding: 15px 10px;
+    border:none;
+    outline: none;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .question p{
+    font-size: 14px;
+    max-height: 0;
+    opacity: 0;
+    line-height: 1.5;
+    overflow: hidden;
+    transition: all 0.6s ease;
+  }
+
+  .ccImage {
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .ccimageWrapper {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .titleText {
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .titleTexttwo {
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .titleTextthree {
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+  background-color: brown;
+  background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 4;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #636363}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: rgb(109, 29, 29);
 }
 
 table {
   color: white;
   background-color: black;
-}
-
-button {
   font-family: 'Roboto Mono', monospace;
-  background-color: yellow;
-  transition: all linear 0.2s;
-  transition-delay: 0.2s;
-  border-radius: 25px;
-  width: 130px;
-  border: 3px solid black;
-  color: black;
-  cursor: pointer;
-}
-
-button:hover {
-  font-family: 'Roboto Mono', monospace;
-  background-color: white;
-  transition: all linear 0.2s;
-  transition-delay: 0.2s;
-  border-radius: 25px;
-  width: 130px;
-  border: 3px solid black;
-  color: black;
-  cursor: pointer;
+  min-width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .tableTitle {
@@ -77,17 +496,10 @@ button:hover {
   font-size: 14px;
 }
 
-.container {
-  position: relative;
-  background-color: white;
-  max-width: 1500px;
-  border-radius: 6px;
-}
-
-table {
-  min-width: 100%;
-  table-layout: fixed;
-  border-collapse: collapse;
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 table th {
@@ -161,7 +573,7 @@ table tr.remove {
 }
 
 table td {
-  font-size: 14px;
+  font-size: 13px;
   border-bottom: 1px solid lightgray;
   padding: 6px 12px;
   text-align: center;
@@ -198,10 +610,6 @@ table td.del {
   display: inline-block;
 }
 
-.sampleButton {
-  display: inline-block;
-}
-
 table tr:hover td.del {
   max-width: 10px;
 }
@@ -227,42 +635,7 @@ table tr.no-data {
   height: 160px;
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.benefitBody {
-  padding-top: 60px;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.titleText {
-  text-align: center;
-}
-
-.titleTexttwo {
-  text-align: center;
-  padding-bottom: 40px;
-}
-
-
-.benefitContainer{
-  display: grid;
-  grid-template-columns: 1fr 1fr
-}
-
-.checkboxText {
-  color: black;
-  cursor: pointer;
-}
-
-#tooltip, #tooltipFour, #tooltipFive, #tooltipSeven, #tooltipTable, #tooltipTablethree, #tooltipTablefour, #tooltipTableseven, #tooltipPoint {
+#tooltip, #tooltipFour, #tooltipFive, #tooltipSeven, #tooltipTable, #tooltipTablethree, #tooltipTablefour, #tooltipTablefive, #tooltipTableseven, #tooltipPoint {
   position: relative;
   cursor: pointer;
 }
@@ -287,6 +660,12 @@ table tr.no-data {
 
 #tooltipTablefour:hover #tooltipTexttable {
   top: -630%;
+  visibility: visible;
+  opacity: 1;
+}
+
+#tooltipTablefive:hover #tooltipTexttable {
+  top: -730%;
   visibility: visible;
   opacity: 1;
 }
@@ -324,7 +703,6 @@ table tr.no-data {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.5s ease;
-  z-index: 2000;
 }
 
 #tooltipTextpoint {
@@ -342,7 +720,6 @@ table tr.no-data {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.5s ease;
-  z-index: 2000;
 }
 
 #tooltipTexttable::before {
@@ -353,7 +730,6 @@ table tr.no-data {
   transform: translateX(-50%);
   border: 15px solid;
   border-color: rgb(255, 255, 255) #0000 #0000 #0000;
-  z-index: 2000;
 }
 
 #pointText {
@@ -408,7 +784,6 @@ table tr.no-data {
   transform: translateX(-50%);
   border: 15px solid;
   border-color: rgb(255, 255, 255) #0000 #0000 #0000;
-  z-index: 2000;
 }
 
 #tooltipText {
@@ -462,14 +837,42 @@ table tr.no-data {
   opacity: 1;
 }
 
-a:link {
+table a:link {
   color: yellow;
   background-color: transparent;
   text-decoration: none;
 }
 
-a:visited {
+table a:visited {
   color: yellow;
   background-color: transparent;
   text-decoration: none;
+}
+
+.questions-container{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.question{
+  border-bottom: 1px solid #fff;
+}
+
+.questionHide{
+  display: none;
+}
+
+.d-arrow{
+  transition: transform 0.5s ease-in ;
+  color: #fff;
+}
+
+/*add this class when click*/
+.question p.show{
+  max-height: 200px; 
+  opacity: 1;
+  padding:0px 15px 30px 15px;
+}
+.question button .d-arrow.rotate{
+  transform: rotate(180deg);
 }
