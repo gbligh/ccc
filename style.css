@@ -299,6 +299,22 @@ ul{
     text-align: center;
     padding-bottom: 20px;
   }
+  
+  .infoContainer {
+    width: 20vw;
+    height: 250px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .infoLargecontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }  
+    
 }
 
 @media (max-width: 768px) {
@@ -424,7 +440,22 @@ ul{
     text-align: center;
     padding-bottom: 20px;
   }
+    
+  
+  .infoContainer {
+    width: 100vw;
+    height: 150px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
+  .infoLargecontainer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }  
 }
 
 /* Style The Dropdown Button */
@@ -879,4 +910,35 @@ table a:visited {
 }
 .question button .d-arrow.rotate{
   transform: rotate(180deg);
+}
+
+.infoIcon {
+  background-color: none;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoTitle {
+  background-color: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.infoParagraph {
+  background-color: none;
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 6;
 }
