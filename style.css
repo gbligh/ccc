@@ -22,10 +22,6 @@ ul{
     list-style: none;
 }
 
-.pageInfo {
-  background-color: none;
-}
-
 .hide { 
   display: none; 
 }
@@ -193,6 +189,11 @@ ul{
       padding-top: 30px;
     }
 
+    .footerTitle {
+      font-weight: bold;
+      font-size: 26px;
+    }
+
     .sampleButton, .refresh {
       display: inline-block;
     }
@@ -262,6 +263,22 @@ ul{
       cursor: pointer;
     }
 
+    .questionTitle button{
+      width: 100%;
+      background-color: white;
+      background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
+      display: flex;
+      justify-content: space-between;
+      border-radius: 15px;
+      align-items: center;
+      padding: 20px 15px;
+      border:none;
+      outline: none;
+      font-size: 22px;
+      font-weight: 700;
+      color: black
+    }
+
     .question p{
       font-size: 22px;
       max-height: 0;
@@ -271,49 +288,165 @@ ul{
       transition: all 0.6s ease;
     }
 
+    .questionTitle p{
+      font-size: 22px;
+      max-height: 0;
+      opacity: 0;
+      line-height: 1.5;
+      overflow: hidden;
+      transition: all 0.6s ease;
+    }
 
-  .ccImage {
-    width: 30%;
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
+    .questionTitlehide button{
+      width: 100%;
+      background-color: white;
+      background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
+      display: flex;
+      justify-content: space-between;
+      border-radius: 15px;
+      align-items: center;
+      padding: 20px 15px;
+      border:none;
+      outline: none;
+      font-size: 22px;
+      font-weight: 700;
+      color: black
+    }
 
-  .ccimageWrapper {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-  }
+    .question p{
+      font-size: 22px;
+      max-height: 0;
+      opacity: 0;
+      line-height: 1.5;
+      overflow: hidden;
+      transition: all 0.6s ease;
+    }
 
-  .titleText {
-    padding-top: 20px;
-    text-align: center;
-  }
+    .questionTitlehide p{
+      font-size: 22px;
+      max-height: 0;
+      opacity: 0;
+      line-height: 1.5;
+      overflow: hidden;
+      transition: all 0.6s ease;
+    }
 
-  .titleTexttwo {
-    padding-bottom: 20px;
-    text-align: center;
-  }
+    .ccImage {
+      width: 30%;
+      border-radius: 15px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
 
-  .titleTextthree {
-    padding-top: 20px;
-    text-align: center;
-    padding-bottom: 20px;
-  }
-  
-  .infoContainer {
-    width: 20vw;
-    height: 250px;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
+    .ccimageWrapper {
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+    }
 
-  .infoLargecontainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  }  
+    .titleText {
+      padding-top: 20px;
+      text-align: center;
+    }
+
+    .titleTexttwo {
+      padding-bottom: 20px;
+      text-align: center;
+    }
+
+    .titleTextthree {
+      padding-top: 20px;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    .infoContainer {
+      width: 20vw;
+      height: 250px;
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .infoLargecontainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .questionInfo {
+      padding-left: 60px;
+      padding-right: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .questionInfocenter {
+      width: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #24c78e;
+      font-family: 'Ultra', serif;
+      font-size: 22px;
+    }
+
+    .questionInfocenterred {
+      width: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #c72424;
+      font-family: 'Ultra', serif;
+      font-size: 22px;
+      border-bottom: 1px solid rgb(0, 0, 0);
+    }
+
+    .checkbox-wrapper-39 *,
+    .checkbox-wrapper-39 *::before,
+    .checkbox-wrapper-39 *::after
+     {
+      box-sizing: border-box;
+    }
+
+    .checkbox-wrapper-39 label {
+      display: block;
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+      padding-left: 60px;
+    }
+
+    .checkbox-wrapper-39 input {
+      visibility: hidden;
+      display: none;
+      padding-left: 40px;
+    }
+
+    .checkbox-wrapper-39 input:checked ~ .checkbox {
+      transform: rotate(45deg);
+      width: 14px;
+      margin-left: 12px;
+      border-color: #24c78e;
+      border-top-color: transparent;
+      border-left-color: transparent;
+      border-radius: 0;
+    }
+
+    .checkbox-wrapper-39 .checkbox {
+      display: block;
+      width: inherit;
+      height: inherit;
+      border: 3px solid #434343;
+      border-radius: 6px;
+      transition: all 0.375s;
+    }
+
+    .questions-container{
+      max-width: 80vw;
+      margin: 0 auto;
+    }
     
 }
 
@@ -350,9 +483,10 @@ ul{
   .footerTwo {
     color: black;
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     padding-top: 50px;
+    padding-bottom: 20px;
   }
 
   .footerThree {
@@ -440,8 +574,7 @@ ul{
     text-align: center;
     padding-bottom: 20px;
   }
-    
-  
+
   .infoContainer {
     width: 100vw;
     height: 150px;
@@ -455,7 +588,62 @@ ul{
   .infoLargecontainer {
     display: grid;
     grid-template-columns: 1fr;
-  }  
+  }
+
+  .questionInfo {
+    display: none;
+  }
+
+  .checkbox-wrapper-39 *,
+  .checkbox-wrapper-39 *::before,
+  .checkbox-wrapper-39 *::after {
+    box-sizing: border-box;
+    display: none;
+}
+
+.checkbox-wrapper-39 label {
+  display: block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  padding-top: 15px;
+  display: none;
+}
+
+.checkbox-wrapper-39 input {
+  visibility: hidden;
+  display: none;
+}
+
+.checkbox-wrapper-39 input:checked ~ .checkbox {
+ transform: rotate(45deg);
+ width: 14px;
+ margin-left: 12px;
+ border-color: #24c78e;
+ border-top-color: transparent;
+ border-left-color: transparent;
+ border-radius: 0;
+ display: none;
+}
+
+.checkbox-wrapper-39 .checkbox {
+  display: none;
+  width: inherit;
+  height: inherit;
+  border: 3px solid #434343;
+  border-radius: 6px;
+  transition: all 0.375s;
+}
+
+.questions-container{
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
+.questionTitlehide {
+  display: none;
+}
+
 }
 
 /* Style The Dropdown Button */
@@ -517,14 +705,14 @@ table {
 }
 
 .tableTitle {
-  height: 40px;
+  height: 100px;
   cursor: auto;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   background-color: black;
   color: yellow;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .content {
@@ -682,9 +870,11 @@ table tr.no-data {
 }
 
 #tooltipGarbage:hover #tooltipTexttable {
-  top: -340%;
+  top: -470%;
   visibility: visible;
   opacity: 1;
+  font-size: 15px;
+  max-width: 140px;
 }
 
 #tooltipTablethree:hover #tooltipTexttable {
@@ -884,13 +1074,12 @@ table a:visited {
   text-decoration: none;
 }
 
-.questions-container{
-  max-width: 800px;
-  margin: 0 auto;
+.question{
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
 }
 
-.question{
-  border-bottom: 1px solid #fff;
+.questionBox, .questionBoxhide {
+  display: flex;
 }
 
 .questionHide{
