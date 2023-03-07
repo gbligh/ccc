@@ -50,6 +50,15 @@ ul{
   margin-left: 10px;
 }
 
+.logo:hover {
+  opacity: .8;
+  transition: all 0.6s ease;
+}
+
+.logoImage {
+  height: 80px;
+}
+
 /* Nav menu */
 .nav{
   width: 100%;
