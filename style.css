@@ -37,7 +37,7 @@ ul{
   background-color: var(--black);
   background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
   box-shadow: 1px 1px 5px 0px var(--gray);
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 5;
