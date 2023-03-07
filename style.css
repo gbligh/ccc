@@ -368,6 +368,15 @@ ul{
       padding-left: 10px;
       padding-right: 10px;
     }
+    
+      .infoContainertwo {
+        width: 20vw;
+        height: 200px;
+        display: grid;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 30px;
+      }
 
     .infoLargecontainer {
       display: grid;
@@ -447,6 +456,17 @@ ul{
       max-width: 80vw;
       margin: 0 auto;
     }
+    
+     #mc_embed_signup {
+       clear:left; 
+       font:14px Helvetica,Arial,sans-serif;  
+       width:600px;
+     }
+    
+    .emailContainer {
+      display: flex;
+      justify-content: space-around;
+      }
     
 }
 
@@ -584,6 +604,16 @@ ul{
     padding-left: 10px;
     padding-right: 10px;
   }
+    
+  .infoContainertwo {
+    width: 100vw;
+    height: 150px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
   .infoLargecontainer {
     display: grid;
@@ -643,7 +673,13 @@ ul{
 .questionTitlehide {
   display: none;
 }
-
+    
+  #mc_embed_signup {
+    background:#fff; 
+    clear:left; 
+    font:14px Helvetica,Arial,sans-serif;  
+    width:300px;
+  }
 }
 
 /* Style The Dropdown Button */
