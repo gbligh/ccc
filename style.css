@@ -546,7 +546,10 @@ ul{
   }
 
   .tableWrapper {
-    padding-right: 220px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .question button{
