@@ -535,7 +535,11 @@ ul{
     align-items: center;
     justify-content: center;
     padding-bottom: 40px;
-}
+  }
+    
+  .button-32 {
+    display: none;
+  }
 
   table {
     color: white;
