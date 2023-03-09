@@ -418,6 +418,16 @@ ul{
       font-size: 22px;
       border-bottom: 1px solid rgb(0, 0, 0);
     }
+    
+   .questionInfocenterrednou {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c72424;
+    font-family: 'Ultra', serif;
+    font-size: 22px;
+    }
 
     .checkbox-wrapper-39 *,
     .checkbox-wrapper-39 *::before,
